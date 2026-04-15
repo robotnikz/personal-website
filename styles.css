@@ -249,6 +249,28 @@ nav a:focus-visible {
   gap: 26px;
 }
 
+.focus-columns {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.focus-group {
+  padding: 22px;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.58);
+  border: 1px solid var(--line);
+}
+
+.group-label {
+  margin: 0 0 6px;
+  color: var(--primary);
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
 .cards,
 .portfolio-grid {
   display: grid;
@@ -257,10 +279,92 @@ nav a:focus-visible {
   margin-top: 24px;
 }
 
+.focus-group .cards {
+  grid-template-columns: 1fr;
+  margin-top: 16px;
+}
+
 .card,
 .portfolio-item {
   padding: 22px;
   border-radius: 20px;
+}
+
+.project-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.project-visual {
+  width: 100%;
+  background: #f6f8fc;
+  border: 1px solid var(--line);
+}
+
+.project-logo {
+  aspect-ratio: 16 / 10;
+  object-fit: contain;
+  border-radius: 18px;
+  padding: 28px;
+}
+
+.project-shot {
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  border-radius: 18px;
+}
+
+.project-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.project-stat {
+  display: inline-flex;
+  align-items: center;
+  padding: 7px 10px;
+  border-radius: 999px;
+  background: var(--primary-soft);
+  color: var(--primary);
+  font-size: 0.84rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.project-tags span {
+  display: inline-flex;
+  align-items: center;
+  padding: 7px 10px;
+  border-radius: 999px;
+  background: var(--surface-soft);
+  color: var(--text);
+  font-size: 0.84rem;
+  font-weight: 500;
+}
+
+.project-link {
+  margin-top: auto;
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.project-link:hover,
+.project-link:focus-visible {
+  text-decoration: underline;
 }
 
 .section-note {
@@ -309,7 +413,9 @@ nav a:focus-visible {
   .intro-grid,
   .timeline-item,
   .cards,
-  .portfolio-grid {
+  .portfolio-grid,
+  .focus-columns,
+  .project-grid {
     grid-template-columns: 1fr;
   }
 
