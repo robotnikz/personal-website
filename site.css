@@ -25,6 +25,25 @@ body {
   color: var(--text);
 }
 
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 16px;
+  padding: 10px 16px;
+  background: var(--primary);
+  color: white;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  z-index: 100;
+  transition: top 200ms ease;
+}
+
+.skip-link:focus {
+  top: 16px;
+}
+
 .page-shell {
   width: min(1100px, calc(100% - 32px));
   margin: 0 auto;
@@ -426,11 +445,34 @@ nav a:focus-visible {
 .footer {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
   gap: 16px;
   padding: 28px 0 12px;
   color: var(--muted);
   font-size: 0.94rem;
   border-top: 1px solid var(--line);
+}
+
+.footer-links {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer-links a {
+  color: var(--muted);
+  text-decoration: none;
+  transition: color 160ms ease;
+}
+
+.footer-links a:hover,
+.footer-links a:focus-visible {
+  color: var(--primary);
+}
+
+.footer-sep {
+  color: var(--line);
 }
 
 @media (max-width: 920px) {
