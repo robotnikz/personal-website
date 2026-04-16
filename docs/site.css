@@ -63,6 +63,7 @@ nav a {
   text-decoration: none;
   color: var(--muted);
   font-size: 0.95rem;
+  white-space: nowrap;
 }
 
 nav a:hover,
@@ -291,7 +292,7 @@ nav a:focus-visible {
 }
 
 .project-grid {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .project-card {
@@ -446,6 +447,14 @@ nav a:focus-visible {
 
   .topbar {
     position: static;
+  }
+
+  nav {
+    gap: 10px;
+  }
+
+  nav a {
+    font-size: 0.85rem;
   }
 
   .page-shell {
