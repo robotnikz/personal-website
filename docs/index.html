@@ -36,7 +36,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./site.css?v=20260419" />
+    <link rel="stylesheet" href="./site.css?v=20260419b" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -68,17 +68,21 @@
     <div class="page-shell">
       <header class="topbar">
         <div class="brand">Portfolio</div>
-        <nav>
+        <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="nav-links">
           <a href="#about">About</a>
           <a href="#experience">Experience</a>
           <a href="#focus">Focus</a>
           <a href="#projects">Projects</a>
           <a href="#contact">Contact</a>
+          <button class="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">🌙</button>
         </nav>
       </header>
 
       <main>
-        <section class="hero">
+        <section class="hero reveal">
           <div class="hero-copy">
             <p class="eyebrow">Project Manager · Release Train Engineer · Technical Delivery</p>
             <h1>Tobias Halbei</h1>
@@ -118,7 +122,7 @@
           </aside>
         </section>
 
-        <section id="about" class="section intro-grid">
+        <section id="about" class="section intro-grid reveal">
           <div>
             <p class="section-kicker">About</p>
             <h2>Structured delivery, technical context, and clear execution.</h2>
@@ -140,7 +144,7 @@
           </div>
         </section>
 
-        <section id="experience" class="section">
+        <section id="experience" class="section reveal">
           <p class="section-kicker">Experience</p>
           <h2>Professional background</h2>
           <div class="timeline">
@@ -178,7 +182,7 @@
           </div>
         </section>
 
-        <section id="focus" class="section compact-grid">
+        <section id="focus" class="section compact-grid reveal">
           <div>
             <p class="section-kicker">Focus areas</p>
             <h2>What I work on</h2>
@@ -221,7 +225,7 @@
           </div>
         </section>
 
-        <section id="projects" class="section">
+        <section id="projects" class="section reveal">
           <p class="section-kicker">Selected GitHub projects</p>
           <h2>Selected independent projects</h2>
           <div class="portfolio-grid project-grid">
@@ -316,7 +320,7 @@
           </p>
         </section>
 
-        <section id="contact" class="section contact">
+        <section id="contact" class="section contact reveal">
           <p class="section-kicker">Connect</p>
           <h2>Open to professional exchange and project conversations</h2>
           <p class="contact-intro">
@@ -350,5 +354,63 @@
         </span>
       </footer>
     </div>
+    <script>
+      // Dark mode toggle
+      const toggle = document.querySelector('.theme-toggle');
+      const html = document.documentElement;
+      const stored = localStorage.getItem('theme');
+      if (stored) {
+        html.setAttribute('data-theme', stored);
+      } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        html.setAttribute('data-theme', 'dark');
+      }
+      function updateIcon() {
+        toggle.textContent = html.getAttribute('data-theme') === 'dark' ? '☀️' : '🌙';
+      }
+      updateIcon();
+      toggle.addEventListener('click', () => {
+        const next = html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+        html.setAttribute('data-theme', next);
+        localStorage.setItem('theme', next);
+        updateIcon();
+      });
+
+      // Hamburger menu
+      const hamburger = document.querySelector('.hamburger');
+      const navLinks = document.querySelector('.nav-links');
+      hamburger.addEventListener('click', () => {
+        const open = hamburger.classList.toggle('open');
+        navLinks.classList.toggle('open');
+        hamburger.setAttribute('aria-expanded', open);
+      });
+      navLinks.querySelectorAll('a').forEach(a => {
+        a.addEventListener('click', () => {
+          hamburger.classList.remove('open');
+          navLinks.classList.remove('open');
+          hamburger.setAttribute('aria-expanded', 'false');
+        });
+      });
+
+      // Scroll reveal
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
+      }, { threshold: 0.08 });
+      document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+      // Active nav highlight
+      const sections = document.querySelectorAll('section[id]');
+      const navItems = document.querySelectorAll('.nav-links a[href^="#"]');
+      const onScroll = () => {
+        let current = '';
+        sections.forEach(s => {
+          if (window.scrollY >= s.offsetTop - 120) current = s.id;
+        });
+        navItems.forEach(a => {
+          a.classList.toggle('active', a.getAttribute('href') === '#' + current);
+        });
+      };
+      window.addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
+    </script>
   </body>
 </html>
