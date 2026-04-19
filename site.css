@@ -85,6 +85,10 @@ nav a {
   white-space: nowrap;
 }
 
+nav a {
+  transition: color 160ms ease;
+}
+
 nav a:hover,
 nav a:focus-visible {
   color: var(--text);
@@ -308,6 +312,13 @@ nav a:focus-visible {
 .portfolio-item {
   padding: 22px;
   border-radius: 20px;
+  transition: transform 160ms ease, box-shadow 160ms ease;
+}
+
+.card:hover,
+.portfolio-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 22px 48px rgba(18, 35, 73, 0.12);
 }
 
 .project-grid {
@@ -378,6 +389,43 @@ nav a:focus-visible {
 .project-link:hover,
 .project-link:focus-visible {
   text-decoration: underline;
+}
+
+.project-placeholder {
+  aspect-ratio: 16 / 10;
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cliproi-visual {
+  background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #a855f7 100%);
+  border: none;
+}
+
+.placeholder-text {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: white;
+  letter-spacing: -0.02em;
+}
+
+.live-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: #dcfce7;
+  color: #166534;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.project-card.featured {
+  border-color: rgba(99, 102, 241, 0.3);
 }
 
 .section-note {
