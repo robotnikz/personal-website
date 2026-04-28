@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">ClipROI dashboard screenshot style preview</title>
+  <desc id="desc">Dark analytics dashboard with metric cards, summary panels, a bar chart, and a comparison table.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#141c38"/>
+      <stop offset="1" stop-color="#101732"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1a2344"/>
+      <stop offset="1" stop-color="#18203e"/>
+    </linearGradient>
+    <linearGradient id="bar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#b18aff"/>
+      <stop offset="1" stop-color="#6d3df0"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="20" flood-color="#0a1025" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="900" rx="28" fill="url(#bg)"/>
+
+  <g fill="#c9b4ff" font-family="Arial, Helvetica, sans-serif" font-weight="700">
+    <rect x="42" y="30" width="365" height="132" rx="24" fill="url(#card)" stroke="#2b355f"/>
+    <rect x="420" y="30" width="365" height="132" rx="24" fill="url(#card)" stroke="#2b355f"/>
+    <rect x="798" y="30" width="365" height="132" rx="24" fill="url(#card)" stroke="#2b355f"/>
+    <rect x="1176" y="30" width="382" height="132" rx="24" fill="url(#card)" stroke="#2b355f"/>
+
+    <text x="224" y="68" text-anchor="middle" font-size="21" letter-spacing="2" fill="#9cadf3">TOTAL CLICKS</text>
+    <text x="224" y="120" text-anchor="middle" font-size="54">425</text>
+    <text x="224" y="150" text-anchor="middle" font-size="22" fill="#a8b1d7" font-weight="500">Campaign-level clicks on the primary link</text>
+
+    <text x="602" y="68" text-anchor="middle" font-size="21" letter-spacing="2" fill="#9cadf3">UNIQUE VISITORS</text>
+    <text x="602" y="120" text-anchor="middle" font-size="54">~425</text>
+    <text x="602" y="150" text-anchor="middle" font-size="22" fill="#a8b1d7" font-weight="500">IP-based deduplication</text>
+
+    <text x="980" y="68" text-anchor="middle" font-size="21" letter-spacing="2" fill="#9cadf3">AVG CLICKS / DAY</text>
+    <text x="980" y="120" text-anchor="middle" font-size="54">20</text>
+    <text x="980" y="150" text-anchor="middle" font-size="22" fill="#a8b1d7" font-weight="500">Over 21 active days</text>
+
+    <text x="1367" y="68" text-anchor="middle" font-size="21" letter-spacing="2" fill="#9cadf3">TOP REFERRER</text>
+    <text x="1367" y="120" text-anchor="middle" font-size="54">www.twitch.tv</text>
+    <text x="1367" y="150" text-anchor="middle" font-size="22" fill="#a8b1d7" font-weight="500">180 clicks</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="42" y="206" width="1516" height="252" rx="28" fill="#181f3f" stroke="#2b355f"/>
+    <rect x="1268" y="234" width="214" height="44" rx="22" fill="#392b78"/>
+    <text x="1375" y="263" text-anchor="middle" fill="#cbb9ff" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="600">Creator comparison mode</text>
+
+    <text x="78" y="270" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">Decision summary</text>
+
+    <rect x="76" y="304" width="344" height="108" rx="18" fill="#222b50" stroke="#39436a"/>
+    <rect x="440" y="304" width="344" height="108" rx="18" fill="#222b50" stroke="#39436a"/>
+    <rect x="804" y="304" width="344" height="108" rx="18" fill="#222b50" stroke="#39436a"/>
+    <rect x="1168" y="304" width="314" height="108" rx="18" fill="#222b50" stroke="#39436a"/>
+    <rect x="76" y="428" width="344" height="104" rx="18" fill="#222b50" stroke="#39436a"/>
+
+    <g font-family="Arial, Helvetica, sans-serif" fill="#ffffff">
+      <text x="98" y="334" font-size="18" fill="#9cadf3" letter-spacing="1">CURRENT LEADER</text>
+      <text x="98" y="376" font-size="40" font-weight="700">StreamerMax</text>
+      <text x="98" y="405" font-size="22" fill="#a8b1d7">180 creator-link clicks · 47% share</text>
+
+      <text x="462" y="334" font-size="18" fill="#9cadf3" letter-spacing="1">CREATOR TRAFFIC TOTAL</text>
+      <text x="462" y="376" font-size="40" font-weight="700">385</text>
+      <text x="462" y="405" font-size="22" fill="#a8b1d7">Across 3 optional creator links</text>
+
+      <text x="826" y="334" font-size="18" fill="#9cadf3" letter-spacing="1">AVERAGE PER CREATOR</text>
+      <text x="826" y="376" font-size="40" font-weight="700">128</text>
+      <text x="826" y="405" font-size="22" fill="#a8b1d7">Helpful baseline for creator comparisons</text>
+
+      <text x="1190" y="334" font-size="18" fill="#9cadf3" letter-spacing="1">BEST DAY</text>
+      <text x="1190" y="376" font-size="40" font-weight="700">03-22</text>
+      <text x="1190" y="405" font-size="22" fill="#a8b1d7">22 clicks on the strongest day</text>
+
+      <text x="98" y="458" font-size="18" fill="#9cadf3" letter-spacing="1">TOP DEVICE</text>
+      <text x="98" y="497" font-size="40" font-weight="700">mobile</text>
+      <text x="98" y="525" font-size="22" fill="#a8b1d7">Leading device category in this report</text>
+    </g>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="42" y="492" width="1516" height="252" rx="28" fill="#181f3f" stroke="#2b355f"/>
+    <text x="78" y="548" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">Clicks Over Time</text>
+
+    <g>
+      <rect x="86" y="634" width="46" height="116" rx="8" fill="url(#bar)"/>
+      <rect x="156" y="650" width="46" height="100" rx="8" fill="url(#bar)"/>
+      <rect x="226" y="650" width="46" height="100" rx="8" fill="url(#bar)"/>
+      <rect x="296" y="650" width="46" height="100" rx="8" fill="url(#bar)"/>
+      <rect x="366" y="650" width="46" height="100" rx="8" fill="url(#bar)"/>
+      <rect x="436" y="650" width="46" height="100" rx="8" fill="url(#bar)"/>
+      <rect x="506" y="650" width="46" height="100" rx="8" fill="url(#bar)"/>
+      <rect x="576" y="650" width="46" height="100" rx="8" fill="url(#bar)"/>
+      <rect x="646" y="650" width="46" height="100" rx="8" fill="url(#bar)"/>
+      <rect x="716" y="650" width="46" height="100" rx="8" fill="url(#bar)"/>
+      <rect x="786" y="650" width="46" height="100" rx="8" fill="url(#bar)"/>
+      <rect x="856" y="650" width="46" height="100" rx="8" fill="url(#bar)"/>
+      <rect x="926" y="660" width="46" height="90" rx="8" fill="url(#bar)"/>
+      <rect x="996" y="660" width="46" height="90" rx="8" fill="url(#bar)"/>
+      <rect x="1066" y="660" width="46" height="90" rx="8" fill="url(#bar)"/>
+      <rect x="1136" y="670" width="46" height="80" rx="8" fill="url(#bar)"/>
+      <rect x="1206" y="670" width="46" height="80" rx="8" fill="url(#bar)"/>
+      <rect x="1276" y="670" width="46" height="80" rx="8" fill="url(#bar)"/>
+      <rect x="1346" y="670" width="46" height="80" rx="8" fill="url(#bar)"/>
+      <rect x="1416" y="678" width="46" height="72" rx="8" fill="url(#bar)"/>
+      <rect x="1486" y="678" width="46" height="72" rx="8" fill="url(#bar)"/>
+    </g>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="42" y="780" width="1516" height="92" rx="24" fill="#181f3f" stroke="#2b355f"/>
+    <text x="78" y="830" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">Creator Comparison</text>
+    <text x="78" y="858" fill="#9cadf3" font-family="Arial, Helvetica, sans-serif" font-size="18" letter-spacing="1">STREAMERMAX  180 CLICKS   47% SHARE   €16.67 CPC   MOBILE   TWITCH.TV</text>
+  </g>
+</svg>
