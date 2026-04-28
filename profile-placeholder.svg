@@ -1,0 +1,26 @@
+<svg width="960" height="1200" viewBox="0 0 960 1200" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Portrait Placeholder</title>
+  <desc id="desc">Illustrated placeholder for a professional portrait with a neutral background.</desc>
+  <rect width="960" height="1200" rx="64" fill="url(#bg)"/>
+  <circle cx="760" cy="180" r="220" fill="url(#glow)" fill-opacity="0.6"/>
+  <circle cx="184" cy="1040" r="260" fill="#D0B188" fill-opacity="0.22"/>
+  <path d="M257 1002C292 859 414 758 560 758C706 758 828 859 863 1002V1136H257V1002Z" fill="#17394A"/>
+  <path d="M350 1084C383 935 464 850 560 850C656 850 737 935 770 1084V1136H350V1084Z" fill="#245C74"/>
+  <circle cx="560" cy="470" r="186" fill="#E2C5A6"/>
+  <path d="M386 494C407 404 459 344 560 344C651 344 723 400 734 493C743 575 677 657 560 657C443 657 366 578 386 494Z" fill="#E6CBAF"/>
+  <path d="M380 456C381 341 465 254 574 254C685 254 762 343 754 461C704 416 657 398 582 399C516 400 455 420 380 456Z" fill="#1C2A36"/>
+  <path d="M446 696C474 721 510 734 560 734C609 734 645 721 674 696C651 760 613 793 560 793C507 793 469 760 446 696Z" fill="#D8B693"/>
+  <rect x="196" y="178" width="172" height="44" rx="22" fill="#FFF9F1" fill-opacity="0.76"/>
+  <rect x="196" y="978" width="212" height="44" rx="22" fill="#FFF9F1" fill-opacity="0.76"/>
+  <defs>
+    <linearGradient id="bg" x1="108" y1="78" x2="846" y2="1139" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F6EFE6"/>
+      <stop offset="0.56" stop-color="#ECE2D3"/>
+      <stop offset="1" stop-color="#E3D4C1"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(760 180) rotate(90) scale(220)">
+      <stop stop-color="#0D5F73"/>
+      <stop offset="1" stop-color="#0D5F73" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+</svg>
