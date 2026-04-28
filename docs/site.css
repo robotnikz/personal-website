@@ -340,6 +340,7 @@ a {
   width: 100%;
   aspect-ratio: 4 / 5;
   object-fit: cover;
+  object-position: center 18%;
   border-radius: calc(var(--radius-lg) - 8px);
   background: #d8d2c7;
 }
