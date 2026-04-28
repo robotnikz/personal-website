@@ -432,6 +432,11 @@ a {
   gap: 20px;
 }
 
+.project-grid {
+  margin-top: 28px;
+  gap: 22px;
+}
+
 .cert-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -472,21 +477,24 @@ a {
 .project-card {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 18px;
+  border: 1px solid rgba(13, 95, 115, 0.12);
+  background: linear-gradient(180deg, rgba(255, 252, 247, 0.96), rgba(247, 240, 231, 0.84));
 }
 
 .project-visual {
   width: 100%;
-  border-radius: 18px;
+  border-radius: 16px;
   border: 1px solid var(--line);
-  background: var(--surface-soft);
+  background: #e9e0d3;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.45);
 }
 
 .project-placeholder {
   display: flex;
   align-items: center;
   justify-content: center;
-  aspect-ratio: 16 / 10;
+  aspect-ratio: 16 / 9.4;
   border: 0;
 }
 
@@ -501,13 +509,13 @@ a {
 }
 
 .project-logo {
-  aspect-ratio: 16 / 10;
+  aspect-ratio: 16 / 9.4;
   object-fit: contain;
-  padding: 26px;
+  padding: 42px 56px;
 }
 
 .project-shot {
-  aspect-ratio: 16 / 10;
+  aspect-ratio: 16 / 9.4;
   object-fit: cover;
 }
 
@@ -520,7 +528,8 @@ a {
 
 .project-badge {
   width: auto;
-  height: 20px;
+  height: 18px;
+  opacity: 0.9;
 }
 
 .project-tags {
@@ -612,6 +621,11 @@ a {
 .focus-card:hover {
   transform: translateY(-3px);
   border-color: rgba(13, 95, 115, 0.28);
+}
+
+.project-card:hover,
+.project-card:focus-within {
+  box-shadow: 0 26px 52px rgba(42, 30, 18, 0.14);
 }
 
 .contact-note {
