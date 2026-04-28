@@ -178,7 +178,7 @@ a {
   grid-template-columns: minmax(0, 1.2fr) minmax(320px, 0.8fr);
   gap: 30px;
   align-items: center;
-  padding: 88px 0 56px;
+  padding: 88px 0 68px;
 }
 
 .eyebrow,
@@ -248,7 +248,7 @@ a {
   margin: 18px 0 0;
   color: var(--accent-strong);
   font-size: 0.95rem;
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: 0.01em;
 }
 
@@ -277,13 +277,15 @@ a {
 }
 
 .button.secondary {
-  background: rgba(255, 250, 244, 0.66);
-  border-color: var(--line);
+  background: rgba(255, 250, 244, 0.88);
+  border-color: rgba(13, 95, 115, 0.16);
+  color: var(--accent-strong);
 }
 
 .button.secondary:hover,
 .button.secondary:focus-visible {
-  border-color: rgba(13, 95, 115, 0.24);
+  background: rgba(255, 250, 244, 0.98);
+  border-color: rgba(13, 95, 115, 0.28);
 }
 
 .hero-facts {
@@ -327,7 +329,7 @@ a {
   content: "";
   position: absolute;
   inset: 0 0 auto 0;
-  height: 4px;
+  height: 6px;
   background: linear-gradient(90deg, var(--accent) 0%, var(--accent-warm) 100%);
 }
 
@@ -361,6 +363,16 @@ a {
 
 .section {
   padding: 56px 0;
+}
+
+.section-intro {
+  max-width: 70ch;
+  margin: 18px 0 0;
+}
+
+.section-intro-compact {
+  max-width: 64ch;
+  margin-top: 14px;
 }
 
 .intro-grid {
@@ -417,6 +429,12 @@ a {
 .timeline-meta {
   color: var(--accent-strong);
   font-weight: 800;
+  align-self: start;
+  width: fit-content;
+  padding: 10px 14px;
+  border: 1px solid rgba(13, 95, 115, 0.14);
+  border-radius: 999px;
+  background: rgba(13, 95, 115, 0.06);
 }
 
 .compact-grid {
