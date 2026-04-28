@@ -449,14 +449,8 @@ a {
   margin-bottom: 20px;
 }
 
-.independent-projects-header h3 {
+.independent-projects-header h2 {
   margin: 0;
-  font-family: "Fraunces", Georgia, serif;
-  font-size: clamp(1.8rem, 3vw, 2.6rem);
-  font-weight: 700;
-  letter-spacing: -0.03em;
-  line-height: 1.02;
-  text-wrap: balance;
 }
 
 .focus-columns,
