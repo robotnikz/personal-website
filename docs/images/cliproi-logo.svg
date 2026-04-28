@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="cliproi-title cliproi-desc">
+  <title id="cliproi-title">ClipROI logo</title>
+  <desc id="cliproi-desc">Gradient square logo with the ClipROI wordmark.</desc>
+  <defs>
+    <linearGradient id="cliproi-gradient" x1="18" y1="18" x2="220" y2="228" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0f4159"/>
+      <stop offset="0.58" stop-color="#11738c"/>
+      <stop offset="1" stop-color="#d29f5d"/>
+    </linearGradient>
+  </defs>
+  <rect width="256" height="256" rx="52" fill="url(#cliproi-gradient)"/>
+  <rect x="12" y="12" width="232" height="232" rx="40" fill="none" stroke="#ffffff" stroke-opacity="0.18"/>
+  <text x="128" y="138" text-anchor="middle" fill="#ffffff" font-family="Georgia, serif" font-size="36" font-weight="700" letter-spacing="-1.2">ClipROI</text>
+</svg>
