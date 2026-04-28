@@ -426,27 +426,48 @@ a {
 
 .continuation-section {
   position: relative;
-  margin-top: -12px;
-  padding-top: 26px;
+  margin-top: -18px;
+  padding-top: 10px;
 }
 
-.section-bridge {
-  margin: 0 0 24px;
-  padding: 22px 24px;
-  border: 1px solid rgba(13, 95, 115, 0.16);
-  border-radius: var(--radius-md);
-  background: linear-gradient(180deg, rgba(13, 95, 115, 0.1), rgba(255, 252, 247, 0.82));
-  box-shadow: var(--shadow);
+.section-flow {
+  display: flex;
+  align-items: flex-end;
+  gap: 18px;
+  width: min(520px, 100%);
+  margin: 0 0 12px;
 }
 
-.section-bridge h3 {
-  margin: 10px 0 0;
-  font-size: 1.2rem;
-  line-height: 1.4;
+.section-flow-label {
+  white-space: nowrap;
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
 }
 
-.section-bridge p:last-child {
-  margin: 10px 0 0;
+.section-flow-line {
+  position: relative;
+  flex: 1;
+  min-width: 120px;
+  height: 42px;
+  border-right: 1.5px solid rgba(13, 95, 115, 0.34);
+  border-bottom: 1.5px solid rgba(13, 95, 115, 0.34);
+  border-bottom-right-radius: 34px;
+  transform: translateY(-4px);
+}
+
+.section-flow-line::after {
+  content: "";
+  position: absolute;
+  right: -1px;
+  bottom: -1px;
+  width: 10px;
+  height: 10px;
+  border-right: 1.5px solid rgba(13, 95, 115, 0.44);
+  border-bottom: 1.5px solid rgba(13, 95, 115, 0.44);
+  transform: translate(42%, 42%) rotate(45deg);
 }
 
 .focus-columns,
@@ -787,5 +808,20 @@ a {
   .footer {
     flex-direction: column;
     text-align: center;
+  }
+
+  .section-flow {
+    gap: 12px;
+    margin-bottom: 10px;
+  }
+
+  .section-flow-label {
+    font-size: 0.68rem;
+    letter-spacing: 0.12em;
+  }
+
+  .section-flow-line {
+    height: 30px;
+    min-width: 72px;
   }
 }
