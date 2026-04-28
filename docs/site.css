@@ -424,6 +424,31 @@ a {
   gap: 26px;
 }
 
+.continuation-section {
+  position: relative;
+  margin-top: -12px;
+  padding-top: 26px;
+}
+
+.section-bridge {
+  margin: 0 0 24px;
+  padding: 22px 24px;
+  border: 1px solid rgba(13, 95, 115, 0.16);
+  border-radius: var(--radius-md);
+  background: linear-gradient(180deg, rgba(13, 95, 115, 0.1), rgba(255, 252, 247, 0.82));
+  box-shadow: var(--shadow);
+}
+
+.section-bridge h3 {
+  margin: 10px 0 0;
+  font-size: 1.2rem;
+  line-height: 1.4;
+}
+
+.section-bridge p:last-child {
+  margin: 10px 0 0;
+}
+
 .focus-columns,
 .project-grid,
 .contact-grid {
