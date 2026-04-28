@@ -504,8 +504,8 @@ a {
   pointer-events: none;
 }
 
-.project-stage-logo {
-  padding: 32px;
+.project-stage-shot {
+  padding: 10px;
 }
 
 .project-visual {
@@ -514,13 +514,11 @@ a {
   border-radius: 16px;
 }
 
-.project-logo {
-  width: min(42%, 136px);
-  height: auto;
-  max-height: 56%;
-  object-fit: contain;
-  border-radius: 20px;
-  box-shadow: 0 14px 26px rgba(25, 27, 39, 0.14);
+.project-shot {
+  object-fit: cover;
+  object-position: center top;
+  border: 1px solid rgba(20, 48, 62, 0.08);
+  box-shadow: 0 16px 30px rgba(25, 27, 39, 0.12);
 }
 
 .project-meta {
