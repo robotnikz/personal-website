@@ -1,50 +1,51 @@
-# Tobias Halbei, Personal Website
+# halbei.com — Personal Website
 
-A professional portfolio website for **Tobias Halbei**, focused on project leadership, release train engineering, technical delivery, and selected technology-driven side projects.
+The personal portfolio website of **Tobias Halbei** — Release Train Engineer and IT Project Manager — live at [www.halbei.com](https://www.halbei.com).
 
-This repository is also part of an **OpenClaw test project** used to explore autonomous iteration workflows for website design, content refinement, and publishing.
+The site presents the full professional profile: delivery leadership experience, certifications, hands-on AI experience, independent software projects, and homelab work. It is written for recruiters and hiring managers looking for project leadership in technical environments.
 
-## Purpose
+## Sections
 
-The site is designed to present Tobias in a clear, professional, employer-facing way, with room to expand later into selected projects, case studies, and broader public positioning.
+| Section | Content |
+| --- | --- |
+| Hero | Positioning, portrait, quick facts (experience, certifications, shipped apps) |
+| About | Career story plus interactive skill tabs (Delivery / Technical / AI & Automation) |
+| Experience | Timeline of roles at IQSIGHT, Bosch Security, MEKRA Lang, Branofilter + certification strip |
+| AI experience | Agentic development, AI in enterprise workflows, self-hosted models, working principles |
+| Projects | ClipROI (SaaS), WinBorg, Sentinel-DNS, DockWatch (open source) + four iOS apps |
+| Homelab | Virtualization, automation, security & monitoring, backup discipline |
+| Contact | Email, LinkedIn, GitHub |
 
-## Current Direction
+## Tech
 
-- Clean, minimal one-page website
-- Professional English-first positioning
-- Focus on:
-  - Project Management / Release Train Engineering
-  - Camera firmware and security-related software environments
-  - Agile delivery and technical coordination
-  - AI-assisted web projects, automation, and homelab topics
-- Structured so future case studies and project highlights can be added without rebuilding the whole site
+- Static HTML + CSS + vanilla JavaScript — no framework, no build step
+- Light/dark theme toggle (persisted in `localStorage`, respects `prefers-color-scheme`)
+- Scroll progress bar, scroll-spy navigation, reveal animations (`prefers-reduced-motion` aware)
+- Accessible tabs, skip link, semantic markup, JSON-LD person schema
+- Fonts: Space Grotesk (display) + Inter (body) via Google Fonts
 
-## Tech Stack
+## Repository layout & deployment
 
-- Static HTML
-- Static CSS
-- GitHub Pages for deployment
+```
+index.html, site.css, favicon.svg   ← working copies (edit these)
+images/, previews/                  ← assets (portrait, project visuals, og:image)
+docs/                               ← GitHub Pages deploy folder (served at www.halbei.com)
+```
 
-## Live Preview
+GitHub Pages serves the site **from the `docs/` folder** (the custom domain is configured via `docs/CNAME`). After changing any site file, sync it into `docs/` before pushing:
 
-- Website: https://robotnikz.github.io/personal-website/
+```bash
+cp index.html site.css favicon.svg docs/
+cp images/* docs/images/
+cp previews/* docs/previews/
+```
 
-## Project Status
+> If root and `docs/` drift apart, the live site silently lags behind — this has happened before, so always sync.
 
-This is an active iteration project. The current version focuses on:
+## Local development
 
-1. professional positioning
-2. visual hierarchy and UX refinement
-3. clearer employer-facing messaging
-4. gradual expansion into real project and case-study content
+No tooling required — open `index.html` in a browser. External assets (Google Fonts, GitHub project screenshots, star badges) need an internet connection.
 
-## Planned Next Steps
+## Social preview
 
-1. add selected case studies or project snapshots
-2. strengthen professional proof points and outcomes
-3. refine contact and profile details
-4. improve social preview assets and public-facing polish
-
-## OpenClaw Context
-
-This repository is maintained as part of an OpenClaw-assisted workflow. The goal is to evaluate how far an autonomous assistant can take concept creation, design refinement, content iteration, and publishing with minimal user friction.
+`previews/portfolio-preview-1.jpg` (the `og:image`) is a 1200×630 screenshot of the hero section. Regenerate it after significant design changes so link previews stay current.
