@@ -3,520 +3,506 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tobias Halbei | IT Project Manager & Release Train Engineer</title>
+    <title>Tobias Halbei — Release Train Engineer & IT Project Manager</title>
     <meta
       name="description"
-      content="Personal website of Tobias Halbei. IT Project Manager and Release Train Engineer with experience across camera firmware, security software, agile delivery, and software-heavy product environments."
+      content="Tobias Halbei — Release Train Engineer and IT Project Manager. A decade in technical product development, from CAD workstation to PI planning. Agile delivery, camera firmware, security software, and hands-on AI experience."
     />
-    <meta property="og:title" content="Tobias Halbei | IT Project Manager & Release Train Engineer" />
+    <meta property="og:title" content="Tobias Halbei — Release Train Engineer & IT Project Manager" />
     <meta
       property="og:description"
-      content="Professional profile focused on IT project management, release train engineering, technical delivery, and close collaboration with software teams in complex product environments."
+      content="I keep complex software programs moving: release train engineering, agile delivery, and hands-on experience with AI, automation, and self-hosted infrastructure."
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://www.halbei.com/" />
     <meta property="og:image" content="https://www.halbei.com/previews/portfolio-preview-1.jpg" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Tobias Halbei | IT Project Manager & Release Train Engineer" />
+    <meta name="twitter:title" content="Tobias Halbei — Release Train Engineer & IT Project Manager" />
     <meta
       name="twitter:description"
-      content="Professional profile for IT project leadership roles, with experience in technical delivery, close collaboration with software teams, and practical AI usage."
+      content="Release train engineering, agile delivery, and hands-on AI experience — plus the projects I build on my own time."
     />
     <meta name="twitter:image" content="https://www.halbei.com/previews/portfolio-preview-1.jpg" />
     <meta name="robots" content="index, follow" />
-    <meta
-      name="keywords"
-      content="Tobias Halbei, IT Project Manager, Release Train Engineer, SAFe, IPMA, camera firmware, security software, agile delivery, software teams, technical project leadership, LLMs, AI workflows, homelab"
-    />
     <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
     <link rel="canonical" href="https://www.halbei.com/" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./site.css?v=20260428a" />
+    <link rel="stylesheet" href="./site.css?v=20260727a" />
+    <script>
+      (() => {
+        const stored = localStorage.getItem('theme');
+        const preferred = stored || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        document.documentElement.dataset.theme = preferred;
+      })();
+    </script>
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "Person",
         "name": "Tobias Halbei",
-        "jobTitle": "IT Project Manager / Release Train Engineer",
+        "jobTitle": "Release Train Engineer / IT Project Manager",
         "url": "https://www.halbei.com/",
         "sameAs": [
           "https://www.linkedin.com/in/tobias-halbei-486a38171",
           "https://github.com/robotnikz"
         ],
         "knowsAbout": [
-          "Project Leadership",
           "Release Train Engineering",
+          "SAFe",
+          "Agile Delivery",
+          "IT Project Management",
           "Camera Firmware",
           "Security Software",
-          "Agile Delivery",
-          "Web Projects",
-          "LLMs",
-          "AI Workflows",
-          "Agentic Workflows",
-          "Homelab Infrastructure"
+          "AI-assisted Development",
+          "LLMs and Agentic Workflows",
+          "Self-hosted Infrastructure",
+          "iOS App Development"
         ]
       }
     </script>
   </head>
   <body>
-    <a class="skip-link" href="#profile">Skip to content</a>
-    <div class="page-shell">
-      <header class="topbar">
-        <a class="brand" href="#hero">Tobias Halbei</a>
-        <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
-          <span></span><span></span><span></span>
-        </button>
+    <a class="skip-link" href="#about">Skip to content</a>
+    <div class="progress-bar" aria-hidden="true"><span></span></div>
+
+    <header class="topbar">
+      <div class="topbar-inner">
+        <a class="brand" href="#top"><span class="brand-mark">TH</span> Tobias Halbei</a>
         <nav class="nav-links" aria-label="Main navigation">
-          <a href="#profile">Profile</a>
+          <a href="#about">About</a>
           <a href="#experience">Experience</a>
-          <a href="#independent">Independent Work</a>
+          <a href="#ai">AI</a>
           <a href="#projects">Projects</a>
+          <a href="#homelab">Homelab</a>
           <a href="#contact">Contact</a>
         </nav>
-      </header>
+        <div class="topbar-actions">
+          <button class="theme-toggle" type="button" aria-label="Switch color theme">
+            <svg class="icon-sun" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.9 4.9l1.4 1.4m11.4 11.4 1.4 1.4M2 12h2m16 0h2M4.9 19.1l1.4-1.4m11.4-11.4 1.4-1.4"/></svg>
+            <svg class="icon-moon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+          </button>
+          <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </header>
 
-      <main>
-        <section id="hero" class="hero reveal">
-          <div class="hero-copy">
-            <p class="eyebrow">Project Management · Release Train Engineering · Technical Products</p>
-            <h1>IT project management and release leadership in software-heavy product environments.</h1>
+    <main id="top">
+      <!-- ============ HERO ============ -->
+      <section class="hero">
+        <div class="hero-inner">
+          <div class="hero-copy reveal">
+            <p class="eyebrow">Release Train Engineer · IT Project Manager · Germany</p>
+            <h1>I keep complex software programs <em>moving</em>.</h1>
             <p class="hero-subline">
-              I lead complex delivery in software-heavy product environments, aligning engineering, product, and
-              stakeholders around clear priorities, realistic plans, and dependable execution. My formal role sits in
-              project and release leadership, supported by enough technical depth to work credibly with software teams,
-              surface risks early, and keep delivery grounded in implementation reality.
+              More than a decade in technical product development — from the CAD workstation to the PI planning
+              board. Today I run release trains for camera and security software teams. After hours I ship my own
+              apps, automate a homelab, and put AI to work on real problems.
             </p>
             <div class="hero-actions">
-              <a class="button primary" href="mailto:tobiashalbei@mailbox.org">Email me</a>
-              <a class="button secondary" href="#experience">View experience</a>
+              <a class="button primary" href="mailto:tobiashalbei@mailbox.org">
+                Get in touch
+              </a>
+              <a class="button ghost" href="#experience">See my experience</a>
             </div>
-            <p class="hero-note">I use AI where it improves research, clarity, and execution quality, while keeping ownership, judgment, and accountability firmly human.</p>
-            <dl class="hero-facts" aria-label="Profile summary">
-              <div>
-                <dt>Role</dt>
-                <dd>IT Project Manager and Release Train Engineer</dd>
-              </div>
-              <div>
-                <dt>Core domains</dt>
-                <dd>Firmware, security, delivery, coordination</dd>
-              </div>
-              <div>
-                <dt>Technical depth</dt>
-                <dd>Software, AI, automation, homelab</dd>
-              </div>
-            </dl>
+            <ul class="hero-stats" aria-label="Quick facts">
+              <li><strong>10+ yrs</strong><span>technical product work</span></li>
+              <li><strong>SAFe RTE</strong><span>certified, practicing</span></li>
+              <li><strong>4 apps</strong><span>shipped to the App&nbsp;Store</span></li>
+              <li><strong>3 tools</strong><span>open-sourced on GitHub</span></li>
+            </ul>
           </div>
+          <figure class="hero-portrait reveal">
+            <img src="./images/portrait.jpeg" alt="Portrait of Tobias Halbei" width="480" height="600" />
+            <figcaption>
+              <strong>Tobias Halbei</strong>
+              <span>Based in Germany</span>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
 
-          <aside class="profile-card" aria-label="Profile card">
-            <div class="profile-portrait-wrap">
-              <img
-                class="profile-portrait"
-                src="./images/portrait2.png"
-                alt="Portrait of Tobias Halbei"
-              />
+      <!-- ============ ABOUT ============ -->
+      <section id="about" class="section reveal">
+        <div class="section-head">
+          <p class="section-kicker">About</p>
+          <h2>The short version</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-copy">
+            <p>
+              I started out as a product developer — five years of SolidWorks, prototypes, and learning how things
+              actually get built. That background never left: as a project manager and Release Train Engineer, I'm
+              the person who can sit in an engineering discussion and follow the argument, then walk into a
+              steering meeting and translate it.
+            </p>
+            <p>
+              My day job is coordination at scale: PI planning, release schedules, dependencies between agile
+              teams, and clearing whatever is in their way. My evenings often look surprisingly similar — except
+              the teams are replaced by containers, coding agents, and a soldering iron.
+            </p>
+            <p>
+              I care about two things in delivery: <strong>honesty in status</strong> and
+              <strong>momentum</strong>. Plans that reflect reality, risks that get named early, and teams that
+              can focus because someone keeps the noise away from them.
+            </p>
+          </div>
+          <div class="skill-panel">
+            <div class="skill-tabs" role="tablist" aria-label="Skill areas">
+              <button role="tab" id="tab-delivery" aria-controls="panel-delivery" aria-selected="true">Delivery</button>
+              <button role="tab" id="tab-technical" aria-controls="panel-technical" aria-selected="false">Technical</button>
+              <button role="tab" id="tab-ai" aria-controls="panel-ai" aria-selected="false">AI &amp; Automation</button>
             </div>
-            <div class="profile-card-body">
-              <p class="profile-kicker">Professional profile</p>
-              <h2>Tobias Halbei</h2>
-              <p>
-                I bring structure to complex delivery and work best where technical understanding,
-                stakeholder alignment, and execution discipline all matter.
-              </p>
-              <ul class="profile-points">
-                <li>Delivery leadership in software-heavy environments with real execution complexity</li>
-                <li>Comfortable balancing stakeholder expectations, technical constraints, and release pressure</li>
-                <li>Independent technical work in software, automation, and AI outside the formal role</li>
+            <div role="tabpanel" id="panel-delivery" aria-labelledby="tab-delivery">
+              <p>How I run programs and trains:</p>
+              <ul class="chip-list">
+                <li>SAFe / Release Train Engineering</li>
+                <li>PI planning &amp; facilitation</li>
+                <li>Release &amp; dependency management</li>
+                <li>Stakeholder communication</li>
+                <li>Jira &amp; Confluence (admin level)</li>
+                <li>Flight Levels</li>
+                <li>Risk &amp; escalation handling</li>
+                <li>OEM customer projects</li>
               </ul>
             </div>
-          </aside>
-        </section>
-
-        <section id="profile" class="section intro-grid reveal">
-          <div>
-            <p class="section-kicker">Profile</p>
-            <h2>How I Work</h2>
-          </div>
-          <div class="stacked-copy">
-            <p>
-              My professional focus is project management and release train engineering in environments where
-              delivery depends on close coordination across engineering, product, and business stakeholders. I am most
-              effective where technical complexity, prioritization, and execution discipline have to work together.
-            </p>
-            <p>
-              That combination makes me a strong fit for IT project leadership roles: structured in planning and
-              coordination, pragmatic about tradeoffs, and deliberate in using modern tools, including AI, to improve
-              speed and clarity without weakening accountability.
-            </p>
-          </div>
-        </section>
-
-        <section class="section value-strip reveal" aria-label="Core strengths">
-          <article>
-            <span>Delivery leadership</span>
-            <strong>Creating clarity, ownership, and dependable forward motion in complex delivery settings.</strong>
-          </article>
-          <article>
-            <span>Technical judgment</span>
-            <strong>Enough technical context to challenge risks early and discuss dependencies and tradeoffs credibly.</strong>
-          </article>
-          <article>
-            <span>Modern ways of working</span>
-            <strong>Using software, automation, and AI deliberately to improve quality, speed, and execution discipline.</strong>
-          </article>
-        </section>
-
-        <section id="experience" class="section reveal">
-          <p class="section-kicker">Experience</p>
-          <h2>Professional Experience</h2>
-          <p class="section-intro">
-            More than a decade across technical product environments, with recent focus on software delivery,
-            firmware-related products, and release coordination.
-          </p>
-          <div class="timeline">
-            <article class="timeline-item">
-              <div class="timeline-meta">Since 2025</div>
-              <div>
-                <h3>Software Project Manager / Release Train Engineer, IQSIGHT</h3>
-                <p>
-                  Software project and release leadership in a camera- and firmware-related product environment
-                  at a Bosch spin-off, coordinating planning, priorities, and cross-team execution in a
-                  software-heavy setting.
-                </p>
-              </div>
-            </article>
-            <article class="timeline-item">
-              <div class="timeline-meta">2022 - 2025</div>
-              <div>
-                <h3>Software Project Manager / Release Train Engineer, Bosch Security and Safety Systems</h3>
-                <p>
-                  Responsible for firmware and plugin-related delivery topics in a security camera environment,
-                  helping align engineering work, agile structures, release planning, and cross-team coordination.
-                </p>
-              </div>
-            </article>
-            <article class="timeline-item">
-              <div class="timeline-meta">2019 - 2022</div>
-              <div>
-                <h3>Project Manager, MEKRA</h3>
-                <p>
-                  Led projects for mirror and camera systems in commercial OEM vehicle environments,
-                  balancing customer requirements, technical constraints, and execution across stakeholders
-                  including Volvo, Iveco, and CLAAS.
-                </p>
-              </div>
-            </article>
-            <article class="timeline-item">
-              <div class="timeline-meta">2013 - 2018</div>
-              <div>
-                <h3>Product Developer, Branofilter GmbH</h3>
-                <p>
-                  Built an early engineering foundation through full-time product-development work around
-                  construction, SolidWorks, and technical detail. That hands-on background still shapes how
-                  I work with technical teams today.
-                </p>
-              </div>
-            </article>
-          </div>
-        </section>
-
-        <section id="certifications" class="section reveal">
-          <p class="section-kicker">Certifications</p>
-          <h2>Relevant Credentials</h2>
-          <div class="cert-grid">
-            <article class="cert-card">
-              <p class="group-label">SAFe</p>
-              <h3>Certified SAFe RTE</h3>
-              <p>Release Train Engineer certification issued in March 2025 by Scaled Agile, Inc.</p>
-            </article>
-            <article class="cert-card">
-              <p class="group-label">SAFe</p>
-              <h3>Certified SAFe 5 Advanced Scrum Master</h3>
-              <p>Advanced Scrum Master certification issued in June 2023 by Scaled Agile, Inc.</p>
-            </article>
-            <article class="cert-card">
-              <p class="group-label">SAFe</p>
-              <h3>Certified SAFe 5 Scrum Master</h3>
-              <p>Scrum Master certification issued in February 2023 by Scaled Agile, Inc.</p>
-            </article>
-            <article class="cert-card">
-              <p class="group-label">IPMA</p>
-              <h3>IPMA Level D</h3>
-              <p>Certified Project Management Associate. Credential ID: 213116.</p>
-            </article>
-          </div>
-        </section>
-
-        <section id="independent" class="section compact-grid reveal independent-suite">
-          <div>
-            <p class="section-kicker">Independent work</p>
-            <h2>Technical Depth Outside Work</h2>
-            <p class="section-intro">
-              Outside the formal role, I stay close to implementation through software, infrastructure, automation,
-              and product work. It keeps my delivery judgment grounded in real technical practice.
-            </p>
-          </div>
-          <div class="independent-body">
-            <div class="focus-columns">
-            <article class="focus-card">
-                <p class="group-label">AI, LLMs, and agents</p>
-              <h3>Using AI to strengthen modern knowledge work</h3>
-              <p>
-                I treat AI as a practical addition to modern knowledge work. I use commercial and open LLMs,
-                and I explore agent-style workflows where they genuinely improve research, planning, iteration,
-                and execution. The point is not automation for its own sake, but better output with clear human
-                ownership.
-              </p>
-            </article>
-            <article class="focus-card">
-              <p class="group-label">Homelab and automation</p>
-              <h3>Infrastructure, automation, and operational thinking in practice</h3>
-              <p>
-                My independent technical work also includes infrastructure and automation topics around
-                Proxmox, Docker, Kubernetes, Ansible, Home Assistant, Frigate, and n8n. What matters to me
-                is not tool familiarity on its own, but staying close to how systems are deployed, automated,
-                operated, and kept reliable in practice.
-              </p>
-            </article>
-            <article class="focus-card">
-              <p class="group-label">Product thinking</p>
-              <h3>Turning technical ideas into something people can actually use</h3>
-              <p>
-                Whether it is a tool, dashboard, SaaS idea, or iOS app, I am interested in how technical
-                ideas become products with real usefulness, clear positioning, and practical usability.
-                I have shipped four independent iOS apps to the App Store.
-              </p>
-            </article>
-            <article class="focus-card accent-card">
-              <p class="group-label">Why it matters</p>
-              <h3>I stay technically current and close to implementation realities.</h3>
-              <p>
-                This makes me stronger in delivery roles: better judgment, more realistic planning, and closer
-                alignment with the implementation realities engineering teams deal with every day.
-              </p>
-            </article>
+            <div role="tabpanel" id="panel-technical" aria-labelledby="tab-technical" hidden>
+              <p>Enough depth to be credible with engineers:</p>
+              <ul class="chip-list">
+                <li>Camera firmware environments</li>
+                <li>Git &amp; CI pipelines</li>
+                <li>Docker &amp; Kubernetes</li>
+                <li>Proxmox virtualization</li>
+                <li>Linux administration</li>
+                <li>Swift / iOS</li>
+                <li>Web (TypeScript, Next.js)</li>
+                <li>Ansible</li>
+              </ul>
             </div>
+            <div role="tabpanel" id="panel-ai" aria-labelledby="tab-ai" hidden>
+              <p>Used daily, not just talked about:</p>
+              <ul class="chip-list">
+                <li>Agentic coding (Claude Code &amp; co.)</li>
+                <li>LLM evaluation &amp; prompting</li>
+                <li>Self-hosted / local models</li>
+                <li>AI agents for Jira &amp; Confluence</li>
+                <li>n8n workflow automation</li>
+                <li>AI-assisted product development</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
 
-            <div id="projects" class="independent-projects">
-              <div class="independent-projects-header">
-                <h2>Independent Projects</h2>
-                <p class="section-intro section-intro-compact">
-                  These projects show the technical and product side I build outside the job: hands-on execution,
-                  practical tooling, and continued closeness to implementation.
-                </p>
-              </div>
-              <div class="project-grid project-grid-independent">
-            <article class="project-card featured">
-              <div class="project-stage project-stage-shot">
-                <img class="project-visual project-shot" src="./images/cliproi-dashboard.svg" alt="ClipROI Dashboard Screenshot" />
-              </div>
+      <!-- ============ EXPERIENCE ============ -->
+      <section id="experience" class="section reveal">
+        <div class="section-head">
+          <p class="section-kicker">Experience</p>
+          <h2>Where I've worked</h2>
+          <p class="section-intro">
+            A common thread runs through all of it: technical products, demanding customers, and the job of
+            turning engineering complexity into commitments people can rely on.
+          </p>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item">
+            <div class="timeline-meta">
+              <span class="timeline-date">Since 2025</span>
+              <span class="timeline-badge current">Current</span>
+            </div>
+            <div class="timeline-body">
+              <h3>Software Project Manager / Release Train Engineer</h3>
+              <p class="timeline-org">IQSIGHT — a Bosch spin-off building intelligent camera systems</p>
+              <p>
+                I run the release train for the software organization: PI planning, cross-team dependencies,
+                release schedules, and the steady removal of whatever slows teams down. On the side I keep
+                improving how we work — Jira and Confluence structures, workflows, and tooling migrations.
+              </p>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <div class="timeline-meta"><span class="timeline-date">2022 – 2025</span></div>
+            <div class="timeline-body">
+              <h3>Software Project Manager / Release Train Engineer</h3>
+              <p class="timeline-org">Bosch Security and Safety Systems</p>
+              <p>
+                Owned firmware and plugin delivery in the video security portfolio: release planning across
+                multiple agile teams, alignment between engineering, product management, and stakeholders — and
+                the constant work of keeping complex firmware releases predictable.
+              </p>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <div class="timeline-meta"><span class="timeline-date">2019 – 2022</span></div>
+            <div class="timeline-body">
+              <h3>Project Manager</h3>
+              <p class="timeline-org">MEKRA Lang — vision systems for commercial vehicles</p>
+              <p>
+                Led OEM development projects for mirror and camera systems, working directly with customers like
+                Volvo, Iveco, and CLAAS. My school for hard requirements, hard deadlines, and honest status
+                reporting.
+              </p>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <div class="timeline-meta"><span class="timeline-date">2013 – 2018</span></div>
+            <div class="timeline-body">
+              <h3>Product Developer</h3>
+              <p class="timeline-org">Branofilter GmbH</p>
+              <p>
+                Five years of hands-on product development — construction, SolidWorks, prototypes, production
+                handover. Where I learned to think like an engineer before I ever managed any.
+              </p>
+            </div>
+          </article>
+        </div>
+        <div class="cert-strip" aria-label="Certifications">
+          <span class="cert-strip-label">Certified</span>
+          <span class="cert-chip">SAFe Release Train Engineer <em>2025</em></span>
+          <span class="cert-chip">SAFe 5 Advanced Scrum Master <em>2023</em></span>
+          <span class="cert-chip">SAFe 5 Scrum Master <em>2023</em></span>
+          <span class="cert-chip">IPMA Level D <em>ID 213116</em></span>
+        </div>
+      </section>
+
+      <!-- ============ AI ============ -->
+      <section id="ai" class="section section-accent reveal">
+        <div class="section-head">
+          <p class="section-kicker">AI experience</p>
+          <h2>I don't just use AI — I build with it</h2>
+          <p class="section-intro">
+            AI is part of how I work every day, at the office and at home. Not as a buzzword, but as a set of
+            tools I've learned to steer: where they're brilliant, where they quietly fail, and how to keep a
+            human accountable for the result.
+          </p>
+        </div>
+        <div class="ai-grid">
+          <article class="ai-card">
+            <div class="ai-card-icon" aria-hidden="true">⌨️</div>
+            <h3>Agentic development</h3>
+            <p>
+              Most of my side projects — this website, four iOS apps, several self-hosted tools — were built in
+              close collaboration with AI coding agents. I plan, review, and decide; the agents write and iterate.
+              That workflow taught me more about the real capabilities and limits of LLMs than any course could.
+            </p>
+          </article>
+          <article class="ai-card">
+            <div class="ai-card-icon" aria-hidden="true">🔗</div>
+            <h3>AI in enterprise workflows</h3>
+            <p>
+              I've built assistants that read, analyze, and update content in enterprise tools like Confluence
+              and Jira in controlled, reviewable workflows — plus automations with n8n that connect AI to
+              everyday processes. Practical experience with what it takes to make AI useful inside a company.
+            </p>
+          </article>
+          <article class="ai-card">
+            <div class="ai-card-icon" aria-hidden="true">🖥️</div>
+            <h3>Self-hosted &amp; local models</h3>
+            <p>
+              I run open models on my own hardware and evaluate them against commercial ones. That means
+              first-hand experience with the privacy, cost, and capability trade-offs organizations face when
+              they decide how to adopt AI.
+            </p>
+          </article>
+          <article class="ai-card">
+            <div class="ai-card-icon" aria-hidden="true">⚖️</div>
+            <h3>Judgment stays human</h3>
+            <p>
+              My rule for AI at work is simple: it can accelerate research, drafting, and iteration — but
+              ownership, review, and accountability never move to the machine. That's also how I'd introduce it
+              to a team.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- ============ PROJECTS ============ -->
+      <section id="projects" class="section reveal">
+        <div class="section-head">
+          <p class="section-kicker">Independent projects</p>
+          <h2>Things I've actually shipped</h2>
+          <p class="section-intro">
+            Built on my own time, from idea to release. They keep my technical judgment honest — it's easy to
+            talk about delivery, harder to deliver.
+          </p>
+        </div>
+        <div class="project-grid">
+          <article class="project-card featured">
+            <div class="project-stage">
+              <img class="project-shot" src="./images/cliproi-dashboard.svg" alt="ClipROI dashboard screenshot" loading="lazy" />
+            </div>
+            <div class="project-body">
               <div class="project-meta">
                 <h3>ClipROI</h3>
                 <span class="live-badge">Live</span>
               </div>
-              <p>
-                SaaS for creator campaign attribution, built around clearer performance visibility,
-                practical workflows, and direct business relevance.
-              </p>
-              <div class="project-tags">
-                <span>SaaS</span>
-                <span>Next.js</span>
-                <span>TypeScript</span>
-                <span>Marketing ROI</span>
-              </div>
-              <a class="project-link" href="https://www.cliproi.com" target="_blank" rel="noreferrer">Visit cliproi.com</a>
-            </article>
-            <article class="project-card">
-              <div class="project-stage project-stage-shot">
-                <img class="project-visual project-shot" src="https://raw.githubusercontent.com/robotnikz/WinBorg/main/public/dashboard.png" alt="WinBorg Dashboard Screenshot" />
-              </div>
+              <p>SaaS for creator campaign attribution — clear performance visibility for marketing teams.</p>
+              <div class="project-tags"><span>SaaS</span><span>Next.js</span><span>TypeScript</span></div>
+              <a class="project-link" href="https://www.cliproi.com" target="_blank" rel="noreferrer">cliproi.com →</a>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-stage">
+              <img class="project-shot" src="https://raw.githubusercontent.com/robotnikz/WinBorg/main/public/dashboard.png" alt="WinBorg dashboard screenshot" loading="lazy" />
+            </div>
+            <div class="project-body">
               <div class="project-meta">
                 <h3>WinBorg</h3>
-                <img class="project-badge" src="https://img.shields.io/github/stars/robotnikz/WinBorg?style=flat-square&label=stars" alt="GitHub stars for WinBorg" />
+                <img class="project-badge" src="https://img.shields.io/github/stars/robotnikz/WinBorg?style=flat-square&label=stars" alt="GitHub stars for WinBorg" loading="lazy" />
               </div>
-              <p>
-                Windows backup manager for Borg, with guided setup, scheduling, and clear restore flows.
-              </p>
-              <div class="project-tags">
-                <span>Windows</span>
-                <span>Backup</span>
-                <span>UX</span>
-              </div>
-              <a class="project-link" href="https://github.com/robotnikz/WinBorg" target="_blank" rel="noreferrer">View repository</a>
-            </article>
-            <article class="project-card">
-              <div class="project-stage project-stage-shot">
-                <img class="project-visual project-shot" src="https://raw.githubusercontent.com/robotnikz/sentinel-dns/main/docs/screenshots/dashboard.png" alt="Sentinel-DNS Dashboard Screenshot" />
-              </div>
+              <p>Windows backup manager for BorgBackup — guided setup, scheduling, clear restore flows.</p>
+              <div class="project-tags"><span>Windows</span><span>Backup</span><span>Open source</span></div>
+              <a class="project-link" href="https://github.com/robotnikz/WinBorg" target="_blank" rel="noreferrer">View on GitHub →</a>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-stage">
+              <img class="project-shot" src="https://raw.githubusercontent.com/robotnikz/sentinel-dns/main/docs/screenshots/dashboard.png" alt="Sentinel-DNS dashboard screenshot" loading="lazy" />
+            </div>
+            <div class="project-body">
               <div class="project-meta">
                 <h3>Sentinel-DNS</h3>
-                <img class="project-badge" src="https://img.shields.io/github/stars/robotnikz/sentinel-dns?style=flat-square&label=stars" alt="GitHub stars for Sentinel-DNS" />
+                <img class="project-badge" src="https://img.shields.io/github/stars/robotnikz/sentinel-dns?style=flat-square&label=stars" alt="GitHub stars for Sentinel-DNS" loading="lazy" />
               </div>
-              <p>
-                The self-hosted DNS blocker appliance (Pi-hole/AdGuard-style) with an honest Web UI,
-                API, and an embedded DNS stack.
-              </p>
-              <div class="project-tags">
-                <span>Security</span>
-                <span>Self-hosting</span>
-                <span>Infrastructure</span>
-              </div>
-              <a class="project-link" href="https://github.com/robotnikz/sentinel-dns" target="_blank" rel="noreferrer">View repository</a>
-            </article>
-            <article class="project-card">
-              <div class="project-stage project-stage-shot">
-                <img class="project-visual project-shot" src="https://raw.githubusercontent.com/robotnikz/dockwatch/main/docs/screenshots/dashboard.png" alt="DockWatch Dashboard Screenshot" />
-              </div>
+              <p>Self-hosted DNS blocker appliance with an embedded DNS stack, web UI, and API.</p>
+              <div class="project-tags"><span>Security</span><span>Self-hosting</span><span>Open source</span></div>
+              <a class="project-link" href="https://github.com/robotnikz/sentinel-dns" target="_blank" rel="noreferrer">View on GitHub →</a>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-stage">
+              <img class="project-shot" src="https://raw.githubusercontent.com/robotnikz/dockwatch/main/docs/screenshots/dashboard.png" alt="DockWatch dashboard screenshot" loading="lazy" />
+            </div>
+            <div class="project-body">
               <div class="project-meta">
                 <h3>DockWatch</h3>
-                <img class="project-badge" src="https://img.shields.io/github/stars/robotnikz/dockwatch?style=flat-square&label=stars" alt="GitHub stars for DockWatch" />
+                <img class="project-badge" src="https://img.shields.io/github/stars/robotnikz/dockwatch?style=flat-square&label=stars" alt="GitHub stars for DockWatch" loading="lazy" />
               </div>
-              <p>
-                A modern, lightweight Docker Compose control GUI for personal homelab use, built to bridge
-                the gap between existing tools.
-              </p>
-              <div class="project-tags">
-                <span>Docker</span>
-                <span>Homelab</span>
-                <span>Operations</span>
-              </div>
-              <a class="project-link" href="https://github.com/robotnikz/dockwatch" target="_blank" rel="noreferrer">View repository</a>
-            </article>
-
-            <div class="projects-subsection-header">
-              <p class="group-label">iOS Apps</p>
-              <p>
-                Four apps published independently on the App Store — privacy-first, no accounts, no tracking,
-                all data on device. <a href="https://robotnikz.github.io" target="_blank" rel="noreferrer">robotnikz.github.io →</a>
-              </p>
+              <p>Lightweight Docker Compose control GUI for homelabs — the gap between existing tools, closed.</p>
+              <div class="project-tags"><span>Docker</span><span>Homelab</span><span>Open source</span></div>
+              <a class="project-link" href="https://github.com/robotnikz/dockwatch" target="_blank" rel="noreferrer">View on GitHub →</a>
             </div>
+          </article>
+        </div>
 
-            <article class="project-card">
-              <div class="project-stage">
-                <span class="app-emoji">🧑‍💼</span>
-              </div>
-              <div class="project-meta">
-                <h3>Grownup</h3>
-                <span class="live-badge">App Store</span>
-              </div>
-              <p>Step-by-step guides for the real-life stuff nobody teaches you: taxes, housing, insurance, and more.</p>
-              <div class="project-tags">
-                <span>Swift</span>
-                <span>iOS</span>
-                <span>Productivity</span>
-              </div>
-              <a class="project-link" href="https://apps.apple.com/de/app/grownup/id6768424573" target="_blank" rel="noreferrer">Download on App Store</a>
-            </article>
-            <article class="project-card">
-              <div class="project-stage">
-                <span class="app-emoji">🥗</span>
-              </div>
-              <div class="project-meta">
-                <h3>MealStreak</h3>
-                <span class="live-badge">App Store</span>
-              </div>
-              <p>Minimalist nutrition tracker with GitHub-style streak grids. No calorie obsession, no friction.</p>
-              <div class="project-tags">
-                <span>Swift</span>
-                <span>iOS</span>
-                <span>Health</span>
-              </div>
-              <a class="project-link" href="https://apps.apple.com/de/app/mealstreak/id6768700380" target="_blank" rel="noreferrer">Download on App Store</a>
-            </article>
-            <article class="project-card">
-              <div class="project-stage">
-                <span class="app-emoji">🍴</span>
-              </div>
-              <div class="project-meta">
-                <h3>Recipd</h3>
-                <span class="live-badge">App Store</span>
-              </div>
-              <p>Save recipes from the web, plan your week, and cook — all on device, no account needed.</p>
-              <div class="project-tags">
-                <span>Swift</span>
-                <span>iOS</span>
-                <span>Lifestyle</span>
-              </div>
-              <a class="project-link" href="https://apps.apple.com/de/app/recipd/id6769465137" target="_blank" rel="noreferrer">Download on App Store</a>
-            </article>
-            <article class="project-card">
-              <div class="project-stage">
-                <span class="app-emoji">🌺</span>
-              </div>
-              <div class="project-meta">
-                <h3>MidLife</h3>
-                <span class="live-badge">App Store</span>
-              </div>
-              <p>Discreet menopause tracking: symptoms, cycle, HRT, pattern recognition, and doctor-ready reports — fully on device.</p>
-              <div class="project-tags">
-                <span>Swift</span>
-                <span>iOS</span>
-                <span>Health</span>
-              </div>
-              <a class="project-link" href="https://apps.apple.com/us/app/midlife/id6769793211" target="_blank" rel="noreferrer">Download on App Store</a>
-            </article>
-              </div>
-            </div>
+        <div class="apps-strip">
+          <div class="apps-strip-head">
+            <h3>iOS apps on the App Store</h3>
+            <p>
+              Four apps, published independently. Privacy-first: no accounts, no tracking, all data on device.
+              <a href="https://robotnikz.github.io" target="_blank" rel="noreferrer">More at robotnikz.github.io →</a>
+            </p>
           </div>
-        </section>
+          <div class="apps-row">
+            <a class="app-pill" href="https://apps.apple.com/de/app/grownup/id6768424573" target="_blank" rel="noreferrer">
+              <span class="app-emoji" aria-hidden="true">🧑‍💼</span>
+              <span class="app-pill-text"><strong>Grownup</strong><span>Guides for real-life adulting</span></span>
+            </a>
+            <a class="app-pill" href="https://apps.apple.com/de/app/mealstreak/id6768700380" target="_blank" rel="noreferrer">
+              <span class="app-emoji" aria-hidden="true">🥗</span>
+              <span class="app-pill-text"><strong>MealStreak</strong><span>Friction-free nutrition streaks</span></span>
+            </a>
+            <a class="app-pill" href="https://apps.apple.com/de/app/recipd/id6769465137" target="_blank" rel="noreferrer">
+              <span class="app-emoji" aria-hidden="true">🍴</span>
+              <span class="app-pill-text"><strong>Recipd</strong><span>Save recipes, plan, cook</span></span>
+            </a>
+            <a class="app-pill" href="https://apps.apple.com/us/app/midlife/id6769793211" target="_blank" rel="noreferrer">
+              <span class="app-emoji" aria-hidden="true">🌺</span>
+              <span class="app-pill-text"><strong>MidLife</strong><span>Discreet menopause tracking</span></span>
+            </a>
+          </div>
+        </div>
+      </section>
 
-        <section id="contact" class="section contact reveal">
-          <p class="section-kicker">Contact</p>
-          <h2>Get In Touch</h2>
-          <p class="contact-intro">
-            I am interested in project leadership and release train roles in software-heavy environments.
-            Email works best for direct recruiter outreach, LinkedIn provides role and career context,
-            and GitHub shows the technical side of my independent work.
+      <!-- ============ HOMELAB ============ -->
+      <section id="homelab" class="section reveal">
+        <div class="section-head">
+          <p class="section-kicker">Homelab</p>
+          <h2>My private data center</h2>
+          <p class="section-intro">
+            Some people have a garden. I have a rack. It's where I test ideas before I trust them — and why
+            words like deployment, monitoring, and backup are not abstract to me.
           </p>
+        </div>
+        <div class="lab-grid">
+          <article class="lab-card">
+            <h3>Virtualization &amp; orchestration</h3>
+            <p>Proxmox cluster, Kubernetes, and a fleet of Docker services — deployed and rebuilt often enough to stay humble.</p>
+          </article>
+          <article class="lab-card">
+            <h3>Automation</h3>
+            <p>Ansible for infrastructure, n8n for workflows, Home Assistant for the house. If it happens twice, it gets automated.</p>
+          </article>
+          <article class="lab-card">
+            <h3>Security &amp; monitoring</h3>
+            <p>Frigate NVR with camera AI detection, DNS filtering, network segmentation — the day job leaking into the hobby.</p>
+          </article>
+          <article class="lab-card">
+            <h3>Data discipline</h3>
+            <p>Versioned Borg backups, tested restores, and documentation. Because a backup you never restored is a rumor.</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- ============ CONTACT ============ -->
+      <section id="contact" class="section reveal">
+        <div class="contact-panel">
+          <div class="section-head">
+            <p class="section-kicker">Contact</p>
+            <h2>Let's talk</h2>
+            <p class="section-intro">
+              I'm interested in project leadership and release train roles in technical environments. Email is
+              the fastest route — CV and references on request.
+            </p>
+          </div>
           <div class="contact-grid">
             <a class="contact-card primary-contact" href="mailto:tobiashalbei@mailbox.org">
-              <span class="contact-card-label">Best route</span>
+              <span class="contact-card-label">Fastest</span>
               <strong>Email</strong>
-              <span class="contact-card-copy">Best for recruiter outreach, role discussions, and CV requests.</span>
+              <span class="contact-card-copy">tobiashalbei@mailbox.org</span>
             </a>
             <a class="contact-card" href="https://www.linkedin.com/in/tobias-halbei-486a38171" target="_blank" rel="noreferrer">
               <span class="contact-card-label">Career profile</span>
               <strong>LinkedIn</strong>
-              <span class="contact-card-copy">Background, career history, and professional context.</span>
+              <span class="contact-card-copy">Background and role history</span>
             </a>
             <a class="contact-card" href="https://github.com/robotnikz" target="_blank" rel="noreferrer">
-              <span class="contact-card-label">Technical perspective</span>
+              <span class="contact-card-label">The technical side</span>
               <strong>GitHub</strong>
-              <span class="contact-card-copy">Repositories, product ideas, homelab topics, and practical implementation.</span>
+              <span class="contact-card-copy">Code, projects, and ideas</span>
             </a>
           </div>
-          <p class="contact-note">CV, additional background, and further context are available on request via email or LinkedIn.</p>
-        </section>
-      </main>
+        </div>
+      </section>
+    </main>
 
-      <footer class="footer">
+    <footer class="footer">
+      <div class="footer-inner">
         <span>&copy; 2026 Tobias Halbei</span>
+        <span class="footer-note">Built with the help of AI agents — reviewed, as always, by a human.</span>
         <span class="footer-links">
-          <a href="#contact">Contact</a>
-          <span class="footer-sep">·</span>
           <a href="mailto:tobiashalbei@mailbox.org">Email</a>
-          <span class="footer-sep">·</span>
           <a href="https://www.linkedin.com/in/tobias-halbei-486a38171" target="_blank" rel="noreferrer">LinkedIn</a>
-          <span class="footer-sep">·</span>
           <a href="https://github.com/robotnikz" target="_blank" rel="noreferrer">GitHub</a>
         </span>
-      </footer>
-    </div>
+      </div>
+    </footer>
 
     <script>
+      // Mobile navigation
       const hamburger = document.querySelector('.hamburger');
       const navLinks = document.querySelector('.nav-links');
-
       hamburger.addEventListener('click', () => {
         const open = hamburger.classList.toggle('open');
         navLinks.classList.toggle('open');
         hamburger.setAttribute('aria-expanded', String(open));
       });
-
       navLinks.querySelectorAll('a').forEach((link) => {
         link.addEventListener('click', () => {
           hamburger.classList.remove('open');
@@ -525,6 +511,15 @@
         });
       });
 
+      // Theme toggle
+      const themeToggle = document.querySelector('.theme-toggle');
+      themeToggle.addEventListener('click', () => {
+        const next = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
+        document.documentElement.dataset.theme = next;
+        localStorage.setItem('theme', next);
+      });
+
+      // Scroll reveal
       const observer = new IntersectionObserver(
         (entries) => {
           entries.forEach((entry) => {
@@ -534,30 +529,44 @@
             }
           });
         },
-        { threshold: 0.12 }
+        { threshold: 0.1 }
       );
+      document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
 
-      document.querySelectorAll('.reveal').forEach((element) => observer.observe(element));
-
+      // Scroll progress + active nav section
+      const progress = document.querySelector('.progress-bar span');
       const sections = document.querySelectorAll('section[id]');
       const navItems = document.querySelectorAll('.nav-links a[href^="#"]');
-
       const onScroll = () => {
+        const doc = document.documentElement;
+        const max = doc.scrollHeight - doc.clientHeight;
+        progress.style.width = `${max > 0 ? (doc.scrollTop / max) * 100 : 0}%`;
         let current = '';
-
         sections.forEach((section) => {
-          if (window.scrollY >= section.offsetTop - 140) {
-            current = section.id;
-          }
+          if (window.scrollY >= section.offsetTop - 160) current = section.id;
         });
-
         navItems.forEach((item) => {
           item.classList.toggle('active', item.getAttribute('href') === `#${current}`);
         });
       };
-
       window.addEventListener('scroll', onScroll, { passive: true });
       onScroll();
+
+      // Skill tabs
+      const tabs = document.querySelectorAll('.skill-tabs [role="tab"]');
+      const panels = document.querySelectorAll('.skill-panel [role="tabpanel"]');
+      tabs.forEach((tab) => {
+        tab.addEventListener('click', () => {
+          tabs.forEach((t) => t.setAttribute('aria-selected', String(t === tab)));
+          panels.forEach((p) => (p.hidden = p.id !== tab.getAttribute('aria-controls')));
+        });
+        tab.addEventListener('keydown', (event) => {
+          const list = Array.from(tabs);
+          const index = list.indexOf(tab);
+          if (event.key === 'ArrowRight') list[(index + 1) % list.length].focus(), list[(index + 1) % list.length].click();
+          if (event.key === 'ArrowLeft') list[(index - 1 + list.length) % list.length].focus(), list[(index - 1 + list.length) % list.length].click();
+        });
+      });
     </script>
   </body>
 </html>
