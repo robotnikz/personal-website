@@ -12,7 +12,7 @@ The site presents the full professional profile: delivery leadership experience,
 | About | Career story plus interactive skill tabs (Delivery / Technical / AI & Automation) |
 | Experience | Timeline of roles at IQSIGHT, Bosch Security, MEKRA Lang, Branofilter + certification strip |
 | AI experience | Agentic development, AI in enterprise workflows, self-hosted models, working principles |
-| Projects | ClipROI (SaaS), WinBorg, Sentinel-DNS, DockWatch (open source) + four iOS apps |
+| Projects | SunFlow, WinBorg, Sentinel-DNS, DockWatch (open source) + four iOS apps |
 | Homelab | Virtualization, automation, security & monitoring, backup discipline |
 | Contact | Email, LinkedIn, GitHub |
 
