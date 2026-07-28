@@ -11,7 +11,6 @@ The site presents the full professional profile: delivery leadership experience,
 | Hero | Positioning, portrait, quick facts (experience, certifications, shipped apps) |
 | About | Career story plus interactive skill tabs (Delivery / Technical / AI & Automation) |
 | Experience | Timeline of roles at IQSIGHT, Bosch Security, MEKRA Lang, Branofilter + certification strip |
-| Method | "How I run a release train" — planning, dependencies, escalation, tooling principles |
 | AI experience | Agentic development, AI in enterprise workflows, self-hosted models, working principles |
 | Projects | SunFlow, WinBorg, Sentinel-DNS, DockWatch (open source) + four iOS apps |
 | Homelab | Virtualization, automation, security & monitoring, backup discipline |
