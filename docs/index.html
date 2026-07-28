@@ -32,7 +32,7 @@
       href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./site.css?v=20260727a" />
+    <link rel="stylesheet" href="./site.css?v=20260728a" />
     <script>
       (() => {
         const stored = localStorage.getItem('theme');
@@ -271,6 +271,64 @@
         </div>
       </section>
 
+      <!-- ============ METHOD ============ -->
+      <section id="method" class="section reveal">
+        <div class="section-head">
+          <p class="section-kicker">Method</p>
+          <h2>How I run a release train</h2>
+          <p class="section-intro">
+            No two trains are the same, but the craft underneath doesn't change. This is what teams and
+            management can expect when I'm responsible for delivery.
+          </p>
+        </div>
+        <ol class="method-list">
+          <li>
+            <span class="method-num" aria-hidden="true">01</span>
+            <div>
+              <h3>Planning people can trust</h3>
+              <p>
+                PI planning is a working session, not a ceremony. Capacity is honest, dependencies are on the
+                table, and every risk leaves the room with an owner. The result is a plan teams actually believe
+                in — which is the only kind worth having.
+              </p>
+            </div>
+          </li>
+          <li>
+            <span class="method-num" aria-hidden="true">02</span>
+            <div>
+              <h3>Dependencies in daylight</h3>
+              <p>
+                Cross-team dependencies rarely fail loudly — they fail quietly, weeks before anyone notices. I
+                make them visible early, follow up relentlessly, and treat every "we'll figure that out later"
+                as a risk in disguise.
+              </p>
+            </div>
+          </li>
+          <li>
+            <span class="method-num" aria-hidden="true">03</span>
+            <div>
+              <h3>Escalation as a tool, not a drama</h3>
+              <p>
+                Most blockers get solved where they appear. When a decision is needed above team level, I
+                escalate fast — with a clear question, the options, and a recommendation. What I don't do is let
+                issues age until they become surprises.
+              </p>
+            </div>
+          </li>
+          <li>
+            <span class="method-num" aria-hidden="true">04</span>
+            <div>
+              <h3>Tooling that serves the process</h3>
+              <p>
+                Jira and Confluence should mirror how people actually work, not the other way around. I build
+                board structures, workflows, and reports that answer questions at a glance — and automate
+                whatever happens more than twice.
+              </p>
+            </div>
+          </li>
+        </ol>
+      </section>
+
       <!-- ============ AI ============ -->
       <section id="ai" class="section section-accent reveal">
         <div class="section-head">
@@ -430,23 +488,23 @@
             words like deployment, monitoring, and backup are not abstract to me.
           </p>
         </div>
-        <div class="lab-grid">
-          <article class="lab-card">
-            <h3>Virtualization &amp; orchestration</h3>
-            <p>Proxmox cluster, Kubernetes, and a fleet of Docker services — deployed and rebuilt often enough to stay humble.</p>
-          </article>
-          <article class="lab-card">
+        <div class="lab-strip">
+          <div class="lab-item">
+            <h3>Virtualization</h3>
+            <p>Proxmox cluster, Kubernetes, and a fleet of Docker services.</p>
+          </div>
+          <div class="lab-item">
             <h3>Automation</h3>
-            <p>Ansible for infrastructure, n8n for workflows, Home Assistant for the house. If it happens twice, it gets automated.</p>
-          </article>
-          <article class="lab-card">
+            <p>Ansible, n8n, Home Assistant — if it happens twice, it gets automated.</p>
+          </div>
+          <div class="lab-item">
             <h3>Security &amp; monitoring</h3>
-            <p>Frigate NVR with camera AI detection, DNS filtering, network segmentation — the day job leaking into the hobby.</p>
-          </article>
-          <article class="lab-card">
+            <p>Frigate NVR with AI detection, DNS filtering, segmented networks.</p>
+          </div>
+          <div class="lab-item">
             <h3>Data discipline</h3>
-            <p>Versioned Borg backups, tested restores, and documentation. Because a backup you never restored is a rumor.</p>
-          </article>
+            <p>Tested Borg restores — a backup you never restored is a rumor.</p>
+          </div>
         </div>
       </section>
 
