@@ -2,7 +2,7 @@
 
 The personal portfolio website of **Tobias Halbei** — Release Train Engineer and IT Project Manager — live at [www.halbei.com](https://www.halbei.com).
 
-The site presents the full professional profile: delivery leadership experience, certifications, hands-on AI experience, independent software projects, and homelab work. It is written for recruiters and hiring managers looking for project leadership in technical environments.
+The site presents the full professional profile: delivery leadership experience, certifications, hands-on AI experience, independent software projects, and homelab work. It is written for a professional audience — anyone who wants to know who I am and how I work.
 
 ## Sections
 
